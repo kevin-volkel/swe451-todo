@@ -24,4 +24,8 @@ public class TaskController {
     public List<Task> getAllTasks() {
         return taskService.getAllTasks();
     }
+
+    @GetMapping("/ping")
+    public String ping() {return "OK"; }
+
 }
